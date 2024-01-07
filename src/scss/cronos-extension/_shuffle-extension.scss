@@ -1,0 +1,36 @@
+/*!
+ * Shuffle CSS Extension for Bootstrap
+ * Copyright 2021 The Shuffle Team
+ */
+
+@import "cronos-variables";
+
+body {
+    @if $enable-antialiasing {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+.alert {
+    color: $alert-color;
+    font-size: $alert-font-size;
+
+    border-top-width: $alert-border-top-width;
+    border-right-width: $alert-border-right-width;
+    border-bottom-width: $alert-border-bottom-width;
+    border-left-width: $alert-border-left-width;
+
+    @if $enable-rounded {
+        border-top-right-radius: $alert-border-top-right-radius;
+        border-top-left-radius: $alert-border-top-left-radius;
+        border-bottom-right-radius: $alert-border-bottom-right-radius;
+        border-bottom-left-radius: $alert-border-bottom-left-radius;
+    } @else {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
